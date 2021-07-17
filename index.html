@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+
+<!--ブラックジャックを作成しましょう。-->
+<head>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- fontawesome -->
+    <link href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="gameDiv" class="bg-white d-flex justify-content-center align-items-center vh-100">
+        <table class="col-5 table table-bordered text-center" style="table-layout:fixed;">
+            <thead>
+              <tr>
+                <th scope="col" style="width:20px;">#</th>
+                <th scope="col" style="width:20px;">0</th>
+                <th scope="col" style="width:20px;">1</th>
+                <th scope="col" style="width:20px;">2</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">0</th>
+                <td id="c0r0"></td>
+                <td id="c1r0"></td>
+                <td id="c2r0"></td>
+              </tr>
+              <tr>
+                <th scope="row">1</th>
+                <td id="c0r1"></td>
+                <td id="c1r1"></td>
+                <td id="c2r1"></td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td id="c0r2"></td>
+                <td id="c1r2"></td>
+                <td id="c2r2"></td>
+              </tr>
+            </tbody>
+        </table>
+        <dir>
+            <button id="nextTurn" type="button" class="btn btn-primary">next turn</button>
+        </dir>
+        <dir>
+            <p id="current">Current turn: o</p>
+            <p id="resultMessage">Winner: </p>
+        </dir> 
+    </div>
+  
+    <script type="text/javascript" src="app.js"></script>
+</body>
