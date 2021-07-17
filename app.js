@@ -133,6 +133,7 @@ document.getElementById('nextTurn').addEventListener('click',()=>{
         field = [['-','-','-'],['-','-','-'],['-','-','-']];
         count = 0;
         refresh(field);
+        document.getElementById("current").innerHTML = `current: ${count % 2 === 0 ? 'o' : 'x'}`;
         document.getElementById('resultMessage').innerHTML = 'Winner: ';
     }
 
